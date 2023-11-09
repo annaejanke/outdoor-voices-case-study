@@ -24,13 +24,42 @@ body {
     color: #444343;
 }
 
+h1 {
+    font-family: "merlo";
+    font-size: 32px;
+    letter-spacing: -2;
+}
+
 h2 {
-  font-size: 36px;
+    font-family: "merlo";
+    font-size: 32px;
+    letter-spacing: -2;
+    color: var(--Brand-gray);
 }
 
 h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
+    font-size: 14px;
+    color: var(--Brand-gray);
+}
+
+h4 {
+    font-family: "merlo";
+    font-size: 18px;
+    color: var(--Brand-gray);
+}
+
+h5 {
+    font-family: "merlo";
+    font-size: 16px;
+    color: var(--Brand-gray);
+}
+
+h6 {
+    font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
+    font-size: 13px;
+    color: var(--light-gray-text);
+    font-weight: 100;
 }
 
 /* Logos */

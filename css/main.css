@@ -93,6 +93,11 @@ h6 {
 
 img {
     border: 1px solid var(--light-gray-text);
+    display: block;
+}
+
+.component img {
+    max-width: initial;
 }
 
 /* Logos */

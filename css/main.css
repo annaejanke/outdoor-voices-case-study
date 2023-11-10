@@ -2,22 +2,33 @@
 
 @font-face {
     font-family: "ov-gothic";
-    src: url("./fonts/ov-gothic.woff2");
+    src: url("../fonts/ov-gothic.woff2");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: "merlo";
+    src: url("../fonts/merlo.woff2");
 }
 
-
-/* Header Styles */
-html {
+:root {
+    --font-sans-serif: merlo, serif;
+    --font-serif: ov-gothic, serif;
     --White: #ffffff;
     --Brand-Blue: #000f9f;
     --Brand-gray: rgb(32, 32, 32);
     --light-gray-text: #737373;
     --light-gray-background: #f9f9f9;
+}
+
+html {
+    box-sizing: border-box;
   }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+/* Copy Styles */
 
 body { 
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
@@ -32,34 +43,56 @@ h1 {
 
 h2 {
     font-family: "merlo";
-    font-size: 32px;
-    letter-spacing: -2;
+    font-size: 60px;
+    letter-spacing: -2px;
     color: var(--Brand-gray);
+    font-weight: 500;
 }
 
 h3 {
-    font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
-    font-size: 14px;
+    font-family: "merlo";
+    font-size: 36px;
+    font-weight: 400;
     color: var(--Brand-gray);
+    letter-spacing: -1.5px;
 }
 
 h4 {
     font-family: "merlo";
-    font-size: 18px;
+    font-size: 48px;
+    font-weight: 400;
     color: var(--Brand-gray);
+    letter-spacing: -1px;
 }
 
 h5 {
     font-family: "merlo";
-    font-size: 16px;
+    font-size: 24px;
     color: var(--Brand-gray);
 }
 
 h6 {
+    font-family: "merlo";
+    font-size: 20px;
+    color: var(--Brand-gray);
+    font-weight: 100;
+    letter-spacing: -.5px;
+}
+
+.cover-section__body { 
+    font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
+    font-size: 20px;
+    color: var(--Brand-gray);
+}
+
+.carousel-section-card__body {
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
     font-size: 13px;
     color: var(--light-gray-text);
-    font-weight: 100;
+}
+
+img {
+    border: 1px solid var(--light-gray-text);
 }
 
 /* Logos */

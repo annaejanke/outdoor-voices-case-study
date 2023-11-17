@@ -85,6 +85,8 @@ h6 {
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
     font-size: 20px;
     color: var(--Brand-gray);
+    margin: 0;
+    margin-top: 12px;
 }
 
 .carousel-section-card__body {
@@ -118,15 +120,6 @@ button {
     display: inline-block;
     font-size: 16px;
   }
-
-.button-container {
-    display: flex;
-    align-items: flex-end;
-}
-
-.button-margin {
-    margin-left: 24px;
-}
 
 /* Logos */
 
@@ -190,3 +183,98 @@ a {
 .image-grid-card__image {
     width: 100%;
 }
+
+/* Cover Section */
+
+.cover_section {
+  width: 100vw;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.cover_section-image {
+  width: 100%;
+}
+
+.cover_section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-margin {
+  margin-left: 24px;
+}
+
+.cover-section__title {
+  margin: 0;
+  margin-top: 4px;
+}
+
+/* Image Grid */
+
+.image_grid_section {
+  width: 100vw;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.image_grid_section-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px
+}
+
+.carousel-section__title {
+  text-align: center;
+}
+
+/* Shop Blocks */
+
+.shop_blocks_section {
+  width: 100vw;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.shop_blocks_section-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.shop_blocks_section_card1 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.shop_blocks_section_card2 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.shop-blocks__title {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #ffffff;
+}
+
+.shop-blocks__image {
+  width: 100%;
+}
+
+
+

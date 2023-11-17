@@ -222,15 +222,18 @@ a {
 .image_grid_section {
   width: 100vw;
   align-items: center;
-  padding: 0 150px;
+  padding: 0 72px;
+  max-width: 1420px;
+  margin: 0 auto;
 }
 
 .image_grid_section-content {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px
+  justify-content: space-between;
+  gap: 16px;
+
 }
 
 .carousel-section__title {
@@ -243,6 +246,10 @@ a {
   width: 100vw;
   align-items: center;
   padding: 0 150px;
+  /* background-color: var(--light-gray-background); */
+  padding: 0 72px;
+  max-width: 1420px;
+  margin: 0 auto;
 }
 
 .shop_blocks_section-content {

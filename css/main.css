@@ -163,6 +163,14 @@ button:hover {
   background-color: var(--Brand-Blue);
 }
 
+.carousel-button_icon {
+  background-color: var(--light-gray-background);
+  color: var(--Brand-gray);
+  text-decoration: none;
+  border-radius: 0;
+  padding: 0px 24px;
+}
+
 /* Logos */
 
 .logo__small {

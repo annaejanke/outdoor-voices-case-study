@@ -368,7 +368,11 @@ a {
 
 .footer__body {
   color: var(--Brand-gray);
-  margin: 12px 0 16px 0;
+  margin: 20px 0 24px 0;
+}
+
+.footer-signup__body {
+  font-size: 16px;
 }
 
 .footer__nav {
@@ -536,9 +540,23 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1420px;
-  margin: auto;
+  max-width: 1600px;
+  margin-left: 200px;
+  padding: 0 10px
+  /* margin: auto; */
   /* padding: 0 72px; */
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #a6aacd;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px 10px 0 10px;
 }
 
 .carousel-product-image-hover {
@@ -561,4 +579,8 @@ a {
   text-align: center;
   width: 100%;
   margin-top: 42px;
+}
+
+.sidenav__img {
+  max-width: 100%;
 }

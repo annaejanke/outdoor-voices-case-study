@@ -368,6 +368,7 @@ a {
 
 .footer__body {
   color: var(--Brand-gray);
+  margin: 12px 0 16px 0;
 }
 
 .footer__nav {
@@ -536,7 +537,7 @@ a {
 .container {
   width: 100%;
   max-width: 1420px;
-  /* margin: auto; */
+  margin: auto;
   /* padding: 0 72px; */
 }
 

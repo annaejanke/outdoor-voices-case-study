@@ -45,6 +45,16 @@ html {
 
 /* Copy Styles */
 
+/* .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+} */
+
 body { 
     -webkit-font-smoothing: antialiased;
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
@@ -206,6 +216,10 @@ a {
         margin-bottom: 1px;
         float:left;
         align-items: center;
+}
+
+.component-code_h5_example {
+  width: 406px;
 }
 
 .image-grid-card__title {

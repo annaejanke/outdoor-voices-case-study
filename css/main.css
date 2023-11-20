@@ -2,13 +2,28 @@
 
 @font-face {
     font-family: "ov-gothic";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400 700;
     src: url("../fonts/ov-gothic.woff2");
 }
 
 @font-face {
     font-family: "merlo";
-    src: url("../fonts/merlo.woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    /* src: url("../fonts/merlo.woff2"); */
+    src:url(https://cdn.outdoorvoices.com/shopify/2.0.0/fonts/merlo.woff2) format("woff2")
 }
+
+@font-face {
+  font-family: "merlo";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  /* src: url("../fonts/merlo.woff2"); */
+  src:url(https://cdn.outdoorvoices.com/shopify/2.0.0/fonts/merlo.woff2) format("woff2")}
 
 :root {
     --font-sans-serif: merlo, serif;
@@ -31,10 +46,13 @@ html {
 /* Copy Styles */
 
 body { 
+    -webkit-font-smoothing: antialiased;
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
     color: #444343;
     padding-left: 20px;
     padding-top: 20px;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -79,6 +97,7 @@ h6 {
     color: var(--Brand-gray);
     font-weight: 100;
     letter-spacing: -.5px;
+    margin: 0;
 }
 
 .cover-section__body { 
@@ -93,6 +112,7 @@ h6 {
     font-family: ov-gothic,HelveticaNeue-Bold,Helvetica Neue Bold,Helvetica Neue,arial,sans-serif;
     font-size: 13px;
     color: var(--light-gray-text);
+    margin: 0;
 }
 
 .img-example {
@@ -120,6 +140,10 @@ button {
     display: inline-block;
     font-size: 16px;
   }
+
+button:hover {
+  background-color: var(--Brand-Blue);
+}
 
 /* Logos */
 
@@ -283,5 +307,226 @@ a {
   width: 100%;
 }
 
+/* Footer */
+
+.email-signup__inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-signup__button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+}
+
+.footer-section {
+  max-width: 500px;
+  flex: 1 1;
+  height: 100%;
+}
+
+.footer__body {
+  color: var(--Brand-gray);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  padding-inline-start: 0;
+}
+
+.footer__nav-left {
+  flex: 2 1;
+}
+
+.footer__nav-right {
+  flex: 1 1;
+}
 
 
+.footer__nav-item {
+  font-size: 13px;
+  margin-bottom: 12px;
+  padding: 0 12px 24px 12px;
+}
+
+.footer-section__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section__socials {
+  color: var(--Brand-gray);
+  margin-bottom: 16px;
+  padding-left: 12px;
+}
+
+.footer-section__copyright {
+  padding-left: 12px;
+}
+
+.footer-social {
+  margin-right: 36px;
+  font-size: 20px;
+}
+
+.radio-input {
+  appearance: none;
+    background: #fff;
+    border: 2px solid #202020;
+    border-radius: 14px;
+    cursor: pointer;
+    height: 28px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    position: relative;
+    width: 28px;
+}
+
+.radio-input::before {
+  background: #202020;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 18px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0) scale(.01);
+    transform: translate3d(-50%,-50%,0) scale(.01);
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+    width: 18px;
+}
+
+.radio-input:checked::before {
+  -webkit-transform: translate3d(-50%,-50%,0) scale(1);
+    transform: translate3d(-50%,-50%,0) scale(1);
+}
+
+.email-input-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(32,32,32,.07);
+    border-radius: 4px;
+    color: #202020;
+    height: 48px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.email-input-label {
+  padding-left: 24px;
+  padding-right: 12px;
+  width: fit-content;
+}
+
+.email-input-input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 4px;
+}
+
+ /* Carousel */
+
+.carousel {
+  width: 100%;
+  /* overflow: scroll; */
+  overflow-x: auto;
+  position: relative;
+}
+
+.carousel-inner {
+  padding-bottom: 10px;
+  white-space: nowrap;
+  position: relative;
+  scroll-snap-type: x proximity;
+  overflow-x: auto;
+
+}
+
+.carousel-example {
+  height: 400px;
+  width: 300px;
+  background-color: red;
+  margin: 0 1px;
+  display: inline-block;
+}
+
+.carousel-product-card {
+  display: inline-block;
+}
+
+.carousel-product-image {
+  height: 400px;
+  min-width: 300px;
+  margin-bottom: 12px;
+}
+
+.carousel-product-caption {
+  width: 95%;
+}
+
+.carousel-section-card__title {
+  margin: 0 0 8px 0;
+  letter-spacing: -.5px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.carousel-button-left {
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+}
+
+.carousel-button-right {
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1420px;
+  /* margin: auto; */
+  /* padding: 0 72px; */
+}
+
+.carousel-product-image-hover {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.carousel-product-image-wrapper {
+  position: relative;
+}
+
+.carousel-product-image-wrapper:hover .carousel-product-image-hover {
+  opacity: 1;
+}
+
+.button__carousel {
+  text-align: center;
+  width: 100%;
+  margin-top: 42px;
+}

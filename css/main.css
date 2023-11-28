@@ -43,17 +43,7 @@ html {
   }
 
 
-/* Copy Styles */
-
-/* .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-} */
+/* Text Styles */
 
 body { 
     -webkit-font-smoothing: antialiased;
@@ -132,6 +122,8 @@ h6 {
     color: var(--light-gray-text);
     margin: 0;
 }
+
+/* Img Example Styles */
 
 .img-example {
     border: 1px solid var(--light-gray-text);
@@ -214,9 +206,11 @@ a {
   color: var(--Deep-gray);
 }
 
+/* Cover Section */
+
 .product__img-h5 {
         width: 406px;
-        height: 542px;
+        /* height: 542px; */
         text-align:center;
         display:block;
         background-color: transparent;
@@ -238,8 +232,6 @@ a {
 .image-grid-card__image {
     width: 100%;
 }
-
-/* Cover Section */
 
 .cover_section {
   width: 100vw;
@@ -295,6 +287,100 @@ a {
   text-align: center;
 }
 
+ /* Carousel */
+
+ .carousel {
+  width: 100%;
+  /* overflow: scroll; */
+  overflow-x: auto;
+  position: relative;
+  padding: 0 72px;
+}
+
+.carousel-inner {
+  padding-bottom: 10px;
+  white-space: nowrap;
+  position: relative;
+  scroll-snap-type: x proximity;
+  overflow-x: auto;
+
+}
+
+.carousel-example {
+  height: 400px;
+  width: 300px;
+  background-color: red;
+  margin: 0 1px;
+  display: inline-block;
+}
+
+.carousel-product-card {
+  display: inline-block;
+  margin: 0;
+}
+
+.carousel-product-image {
+  height: 400px;
+  min-width: 300px;
+  margin-bottom: 12px;
+}
+
+.carousel-product-caption {
+  width: 95%;
+}
+
+.carousel-section-card__title {
+  margin: 0 0 8px 0;
+  letter-spacing: -.5px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.carousel-button-left {
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+}
+
+.carousel-button-right {
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: 200px;
+  padding: 0 10px;
+  /* margin: auto; */
+  /* padding: 0 72px; */
+}
+
+.carousel-product-image-hover {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.carousel-product-image-wrapper {
+  position: relative;
+}
+
+.carousel-product-image-wrapper:hover .carousel-product-image-hover {
+  opacity: 1;
+}
+
+.button__carousel {
+  text-align: center;
+  width: 100%;
+  margin-top: 42px;
+}
+
 /* Shop Blocks */
 
 .shop_blocks_section {
@@ -305,6 +391,7 @@ a {
   padding: 0 72px;
   max-width: 1420px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 .shop_blocks_section-content {
@@ -477,99 +564,7 @@ a {
   padding: 0 4px;
 }
 
- /* Carousel */
-
-.carousel {
-  width: 100%;
-  /* overflow: scroll; */
-  overflow-x: auto;
-  position: relative;
-}
-
-.carousel-inner {
-  padding-bottom: 10px;
-  white-space: nowrap;
-  position: relative;
-  scroll-snap-type: x proximity;
-  overflow-x: auto;
-
-}
-
-.carousel-example {
-  height: 400px;
-  width: 300px;
-  background-color: red;
-  margin: 0 1px;
-  display: inline-block;
-}
-
-.carousel-product-card {
-  display: inline-block;
-}
-
-.carousel-product-image {
-  height: 400px;
-  min-width: 300px;
-  margin-bottom: 12px;
-}
-
-.carousel-product-caption {
-  width: 95%;
-}
-
-.carousel-section-card__title {
-  margin: 0 0 8px 0;
-  letter-spacing: -.5px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-.carousel-button-left {
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-}
-
-.carousel-button-right {
-  right: 0;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-}
-
-.container {
-  width: 100%;
-  max-width: 1600px;
-  margin-left: 200px;
-  padding: 0 10px;
-  /* margin: auto; */
-  /* padding: 0 72px; */
-}
-
-.carousel-product-image-hover {
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transition: opacity .3s ease-in-out;
-}
-
-.carousel-product-image-wrapper {
-  position: relative;
-}
-
-.carousel-product-image-wrapper:hover .carousel-product-image-hover {
-  opacity: 1;
-}
-
-.button__carousel {
-  text-align: center;
-  width: 100%;
-  margin-top: 42px;
-}
-
-/* Sidenav Styles  */
+/* Sidenav Styles For Components Page */
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */

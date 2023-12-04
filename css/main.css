@@ -289,12 +289,16 @@ a {
 
  /* Carousel */
 
+ .carousel-wrapper {
+  padding: 0 72px;
+ }
+
  .carousel {
   width: 100%;
   /* overflow: scroll; */
   overflow-x: auto;
   position: relative;
-  padding: 0 72px;
+  /* padding: 0 72px; */
 }
 
 .carousel-inner {
